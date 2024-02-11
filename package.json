@@ -36,5 +36,9 @@
   },
   "volta": {
     "node": "20.11.0"
+  },
+  "lint-staged": {
+    "*.{ts, tsx}": "eslint --cache --cache-location .next/cache/eslint/ --fix",
+    "*.{js,jsx,ts,tsx,json}": "prettier --write"
   }
 }
