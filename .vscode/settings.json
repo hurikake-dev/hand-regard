@@ -18,6 +18,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "jest.runMode": "on-save",
   "jest.jestCommandLine": "pnpm test --",
 
   // Disable TypeScript surveys.
