@@ -9,7 +9,7 @@
     "start": "next start",
     "build": "run-s build:*",
     "build:next": "next build",
-    "build:storybook": "build-storybook",
+    "build:storybook": "storybook build",
     "lint": "run-s -c lint:*",
     "lint:eslint": "next lint",
     "lint:prettier": "prettier --check './**/*.{js,jsx,ts,tsx,json}'",
