@@ -1,3 +1,5 @@
+import { Suspense } from 'react'
+
 import SearchField from '@/components/SearchField'
 import TagList from '@/components/TagList'
 
@@ -12,7 +14,9 @@ type Props = {
 export default function Nav({ tags }: Props) {
   return (
     <nav className={styles.nav}>
-      <SearchField />
+      <Suspense>
+        <SearchField />
+      </Suspense>
       <TagList tags={tags} />
     </nav>
   )
